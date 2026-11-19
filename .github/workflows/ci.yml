@@ -65,9 +65,10 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
 
-    # Инцидент 1: право публикации пока намеренно отсутствует.
+    
     permissions:
       contents: read
+      packages: write
 
     steps:
       - name: Checkout
